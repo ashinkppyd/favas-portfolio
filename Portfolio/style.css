@@ -136,8 +136,10 @@ nav {
     font-size: 4.5rem;
     line-height: 1.05;
     margin-bottom: 1rem;
+    color: #ffffff; /* 1. Fallback color added here */
     background: linear-gradient(45deg, #fff, #aaa);
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
+    background-clip: text; /* 2. Standard property added here */
     -webkit-text-fill-color: transparent;
 }
 
