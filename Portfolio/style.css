@@ -136,10 +136,10 @@ nav {
     font-size: 4.5rem;
     line-height: 1.05;
     margin-bottom: 1rem;
-    color: #ffffff; /* 1. Fallback color added here */
-    background: linear-gradient(45deg, #fff, #aaa);
+    color: #ffffff; /* Fallback color */
+    background: linear-gradient(45deg, #ffffff, #aaaaaa);
     -webkit-background-clip: text;
-    background-clip: text; /* 2. Standard property added here */
+    background-clip: text; /* Standard property for browser support */
     -webkit-text-fill-color: transparent;
 }
 
@@ -151,7 +151,7 @@ nav {
 }
 
 .hero-image-container {
-    width: 32%; /* Reduced Size */
+    width: 32%; 
     max-width: 380px; 
     border-radius: 12px;
     overflow: hidden;
@@ -188,7 +188,7 @@ nav {
 }
 
 .split-image {
-    width: 35%; /* Reduced Size */
+    width: 35%;
     max-width: 400px;
     border-radius: 12px;
     overflow: hidden;
@@ -299,10 +299,20 @@ nav {
     font-size: 1.8rem;
 }
 
+/* New Icon Styles */
 .contact-info-box p {
-    margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
     color: var(--text-primary);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.icon {
+    color: var(--accent-color);
+    font-size: 1.3rem;
+    margin-top: 4px; /* aligns icon with text */
 }
 
 .contact-info-box strong {
@@ -311,7 +321,7 @@ nav {
     text-transform: uppercase;
     letter-spacing: 2px;
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 4px;
 }
 
 .text-link {
@@ -480,5 +490,11 @@ footer .copyright {
         text-align: center;
         border-bottom: 1px solid rgba(255,255,255,0.1);
         padding-bottom: 3rem;
+    }
+    
+    /* Center the icons on mobile */
+    .contact-info-box p {
+        justify-content: center;
+        text-align: left;
     }
 }

@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favas VM | Premium Trader & Mentor</title>
     <link rel="stylesheet" href="style.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -74,11 +77,26 @@
         <div class="contact-container">
             <div class="contact-info-box">
                 <h3>Get In Touch</h3>
-                <p><strong>Call / WhatsApp:</strong><br> 
-                    <a href="https://wa.me/919995934169" target="_blank" class="text-link">+91 99959 34169</a>
+                
+                <p><i class="fas fa-phone-alt icon"></i> 
+                    <span>
+                        <strong>Call / WhatsApp:</strong>
+                        <a href="https://wa.me/919995934169" target="_blank" class="text-link">+91 99959 34169</a>
+                    </span>
                 </p>
-                <p><strong>Email:</strong><br> 
-                    <a href="mailto:fawazvm50@gmail.com" class="text-link">fawazvm50@gmail.com</a>
+
+                <p><i class="fas fa-envelope icon"></i> 
+                    <span>
+                        <strong>Email:</strong>
+                        <a href="mailto:fawazvm50@gmail.com" class="text-link">fawazvm50@gmail.com</a>
+                    </span>
+                </p>
+
+                <p><i class="fab fa-instagram icon"></i> 
+                    <span>
+                        <strong>Instagram:</strong>
+                        <a href="https://instagram.com/_vm_customs_" target="_blank" class="text-link">@favas_vm</a>
+                    </span>
                 </p>
                 
                 <a href="https://wa.me/919995934169?text=Hi%20Favas,%20I'm%20interested%20in%20your%20mentorship!" target="_blank" class="whatsapp-btn">
@@ -108,25 +126,16 @@
         <p class="copyright">© 2026 Favas VM. All Rights Reserved.</p>
     </footer>
 
-    <!-- <a href="https://wa.me/919995934169?text=Hi%20Favas,%20I'm%20interested%20in%20your%20mentorship!" class="floating-wa" target="_blank" title="Chat on WhatsApp">
-        <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor">
-            <path d="M16.002 0h-.004C7.178 0 0 7.178 0 16.004c0 2.802.732 5.518 2.122 7.928L.472 31.528l7.768-1.638A15.85 15.85 0 0 0 15.996 32h.004C24.822 32 32 24.82 32 16.002 32 7.178 24.822 0 16.002 0zM9.548 11.234c.328-.732.66-.746.974-.758.266-.01.568-.01.872-.01s.794.114 1.21.568c.414.454 1.588 1.552 1.588 3.784s1.626 4.39 1.854 4.694c.226.302 3.2 4.884 7.756 6.848 1.084.47 1.93.75 2.592.96.96.304 1.834.26 2.528.158.78-.116 2.398-.98 2.738-1.928.34-.948.34-1.76.24-1.928-.102-.17-.378-.266-.756-.456-.378-.19-2.24-1.108-2.588-1.236-.35-.128-.606-.19-.86.19-.254.378-.974 1.234-1.192 1.488-.216.254-.434.284-.812.094-.378-.19-1.6-.59-3.048-1.886-1.126-1.008-1.886-2.254-2.102-2.634-.216-.378-.022-.582.168-.77.17-.17.378-.44.568-.66.19-.218.254-.378.378-.632.126-.254.062-.474-.032-.664-.094-.19-.86-2.072-1.178-2.836-.312-.746-.628-.646-.86-.658z"/>
-        </svg>
-    </a> -->
 
     <script>
         document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevents page reload
+            e.preventDefault(); 
             
-            // Get values from form
             let name = document.getElementById('userName').value;
             let email = document.getElementById('userEmail').value;
             let message = document.getElementById('userMessage').value;
             
-            // Format the message for WhatsApp
             let waText = `Hello Favas!%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Message:* ${message}`;
-            
-            // Redirect to WhatsApp
             let waLink = `https://wa.me/919995934169?text=${waText}`;
             window.open(waLink, '_blank');
         });
